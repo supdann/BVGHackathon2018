@@ -7,6 +7,8 @@ target 'BVGHackaton2018' do
 
   # Pods for BVGHackaton2018
   pod 'BeaconService', '~> 2.11.0'
+  pod 'Alamofire', '~> 4.7'
+  pod 'SwiftyJSON', '~> 4.0'
 
   target 'BVGHackaton2018Tests' do
     inherit! :search_paths

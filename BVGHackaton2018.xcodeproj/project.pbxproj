@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50D6F2F0FCE4FB7617FF192D /* Pods_BVGHackaton2018Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE3ACA5462027C74EA2E011 /* Pods_BVGHackaton2018Tests.framework */; };
+		72CB53697A48783D63DB5A6D /* Pods_BVGHackaton2018.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2D6938CE8DDA0567FE0E58 /* Pods_BVGHackaton2018.framework */; };
+		741AF1BC21288A2D0072BF7A /* BVGHackaton2018.m in Sources */ = {isa = PBXBuildFile; fileRef = 741AF1BB21288A2D0072BF7A /* BVGHackaton2018.m */; };
+		741AF1C82128B5A70072BF7A /* Arrow.dae in Resources */ = {isa = PBXBuildFile; fileRef = 741AF1C72128B5A70072BF7A /* Arrow.dae */; };
+		741AF1CA2128B5C70072BF7A /* Arrow1.scn in Resources */ = {isa = PBXBuildFile; fileRef = 741AF1C92128B5C70072BF7A /* Arrow1.scn */; };
+		741AF1CC2128B6610072BF7A /* Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AF1CB2128B6610072BF7A /* Arrow.swift */; };
+		741AF1CE2128C5930072BF7A /* MiniMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AF1CD2128C5930072BF7A /* MiniMap.swift */; };
+		741AF1D02128C9B00072BF7A /* MiniMap.xib in Resources */ = {isa = PBXBuildFile; fileRef = 741AF1CF2128C9B00072BF7A /* MiniMap.xib */; };
+		743133A22129565700079302 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743133A12129565700079302 /* APIManager.swift */; };
+		74555F9D2128D0F40001043F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74555F9C2128D0F40001043F /* Extensions.swift */; };
+		746AB6AA2128775E00ED7C02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746AB6A92128775E00ED7C02 /* AppDelegate.swift */; };
+		746AB6AC2128775E00ED7C02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746AB6AB2128775E00ED7C02 /* ViewController.swift */; };
+		746AB6AF2128775E00ED7C02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 746AB6AD2128775E00ED7C02 /* Main.storyboard */; };
+		746AB6B12128776000ED7C02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 746AB6B02128776000ED7C02 /* Assets.xcassets */; };
+		746AB6B42128776000ED7C02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 746AB6B22128776000ED7C02 /* LaunchScreen.storyboard */; };
+		747FD7CA21296F2F00EA905D /* Arrow2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 747FD7C921296F2F00EA905D /* Arrow2.scn */; };
+		747FD7CC21296F5000EA905D /* Arrow3.scn in Resources */ = {isa = PBXBuildFile; fileRef = 747FD7CB21296F5000EA905D /* Arrow3.scn */; };
+		E53EC5ABF7A8F8EF3F84DA07 /* Pods_BVGHackaton2018UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268E10391408E37311A1EC27 /* Pods_BVGHackaton2018UITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		746AB6BB2128776000ED7C02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 746AB69E2128775E00ED7C02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 746AB6A52128775E00ED7C02;
+			remoteInfo = BVGHackaton2018;
+		};
+		746AB6C62128776000ED7C02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 746AB69E2128775E00ED7C02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 746AB6A52128775E00ED7C02;
+			remoteInfo = BVGHackaton2018;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		110590F11655E397F30C8636 /* Pods-BVGHackaton2018.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BVGHackaton2018.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BVGHackaton2018/Pods-BVGHackaton2018.debug.xcconfig"; sourceTree = "<group>"; };
+		268E10391408E37311A1EC27 /* Pods_BVGHackaton2018UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BVGHackaton2018UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A160098AA48103C8045BEA /* Pods-BVGHackaton2018Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BVGHackaton2018Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BVGHackaton2018Tests/Pods-BVGHackaton2018Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6090EF5EEC35B2DC8A2A466D /* Pods-BVGHackaton2018UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BVGHackaton2018UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BVGHackaton2018UITests/Pods-BVGHackaton2018UITests.release.xcconfig"; sourceTree = "<group>"; };
+		741AF1BA21288A2D0072BF7A /* BVGHackaton2018-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BVGHackaton2018-Bridging-Header.h"; sourceTree = "<group>"; };
+		741AF1BB21288A2D0072BF7A /* BVGHackaton2018.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BVGHackaton2018.m; sourceTree = "<group>"; };
+		741AF1C72128B5A70072BF7A /* Arrow.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Arrow.dae; sourceTree = "<group>"; };
+		741AF1C92128B5C70072BF7A /* Arrow1.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Arrow1.scn; sourceTree = "<group>"; };
+		741AF1CB2128B6610072BF7A /* Arrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrow.swift; sourceTree = "<group>"; };
+		741AF1CD2128C5930072BF7A /* MiniMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMap.swift; sourceTree = "<group>"; };
+		741AF1CF2128C9B00072BF7A /* MiniMap.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiniMap.xib; sourceTree = "<group>"; };
+		743133A12129565700079302 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		74555F9C2128D0F40001043F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		746AB6A62128775E00ED7C02 /* BVGHackaton2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BVGHackaton2018.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		746AB6A92128775E00ED7C02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		746AB6AB2128775E00ED7C02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		746AB6AE2128775E00ED7C02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		746AB6B02128776000ED7C02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		746AB6B32128776000ED7C02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		746AB6B52128776000ED7C02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		746AB6BA2128776000ED7C02 /* BVGHackaton2018Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BVGHackaton2018Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		746AB6C52128776000ED7C02 /* BVGHackaton2018UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BVGHackaton2018UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		747FD7C921296F2F00EA905D /* Arrow2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Arrow2.scn; sourceTree = "<group>"; };
+		747FD7CB21296F5000EA905D /* Arrow3.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Arrow3.scn; sourceTree = "<group>"; };
+		8B8CB6E1D3B607272C853734 /* Pods-BVGHackaton2018.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BVGHackaton2018.release.xcconfig"; path = "Pods/Target Support Files/Pods-BVGHackaton2018/Pods-BVGHackaton2018.release.xcconfig"; sourceTree = "<group>"; };
+		9C5DCB2B49B8D305393334FD /* Pods-BVGHackaton2018Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BVGHackaton2018Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BVGHackaton2018Tests/Pods-BVGHackaton2018Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9CE3ACA5462027C74EA2E011 /* Pods_BVGHackaton2018Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BVGHackaton2018Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA778E9BA0E8C8C0B7A2242B /* Pods-BVGHackaton2018UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BVGHackaton2018UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BVGHackaton2018UITests/Pods-BVGHackaton2018UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA2D6938CE8DDA0567FE0E58 /* Pods_BVGHackaton2018.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BVGHackaton2018.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		746AB6A32128775E00ED7C02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72CB53697A48783D63DB5A6D /* Pods_BVGHackaton2018.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		746AB6B72128776000ED7C02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D6F2F0FCE4FB7617FF192D /* Pods_BVGHackaton2018Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		746AB6C22128776000ED7C02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E53EC5ABF7A8F8EF3F84DA07 /* Pods_BVGHackaton2018UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45B53A2A65C1B44E098E72E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				110590F11655E397F30C8636 /* Pods-BVGHackaton2018.debug.xcconfig */,
+				8B8CB6E1D3B607272C853734 /* Pods-BVGHackaton2018.release.xcconfig */,
+				9C5DCB2B49B8D305393334FD /* Pods-BVGHackaton2018Tests.debug.xcconfig */,
+				42A160098AA48103C8045BEA /* Pods-BVGHackaton2018Tests.release.xcconfig */,
+				AA778E9BA0E8C8C0B7A2242B /* Pods-BVGHackaton2018UITests.debug.xcconfig */,
+				6090EF5EEC35B2DC8A2A466D /* Pods-BVGHackaton2018UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		741AF1BD2128AACA0072BF7A /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				741AF1C72128B5A70072BF7A /* Arrow.dae */,
+				741AF1C92128B5C70072BF7A /* Arrow1.scn */,
+				747FD7C921296F2F00EA905D /* Arrow2.scn */,
+				747FD7CB21296F5000EA905D /* Arrow3.scn */,
+				741AF1CB2128B6610072BF7A /* Arrow.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		746AB69D2128775E00ED7C02 = {
+			isa = PBXGroup;
+			children = (
+				746AB6A82128775E00ED7C02 /* BVGHackaton2018 */,
+				746AB6A72128775E00ED7C02 /* Products */,
+				45B53A2A65C1B44E098E72E2 /* Pods */,
+				F22B864BFDE083D2654527FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		746AB6A72128775E00ED7C02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				746AB6A62128775E00ED7C02 /* BVGHackaton2018.app */,
+				746AB6BA2128776000ED7C02 /* BVGHackaton2018Tests.xctest */,
+				746AB6C52128776000ED7C02 /* BVGHackaton2018UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		746AB6A82128775E00ED7C02 /* BVGHackaton2018 */ = {
+			isa = PBXGroup;
+			children = (
+				741AF1BD2128AACA0072BF7A /* Objects */,
+				746AB6A92128775E00ED7C02 /* AppDelegate.swift */,
+				746AB6AB2128775E00ED7C02 /* ViewController.swift */,
+				746AB6AD2128775E00ED7C02 /* Main.storyboard */,
+				746AB6B02128776000ED7C02 /* Assets.xcassets */,
+				746AB6B22128776000ED7C02 /* LaunchScreen.storyboard */,
+				746AB6B52128776000ED7C02 /* Info.plist */,
+				741AF1BB21288A2D0072BF7A /* BVGHackaton2018.m */,
+				741AF1BA21288A2D0072BF7A /* BVGHackaton2018-Bridging-Header.h */,
+				741AF1CD2128C5930072BF7A /* MiniMap.swift */,
+				741AF1CF2128C9B00072BF7A /* MiniMap.xib */,
+				74555F9C2128D0F40001043F /* Extensions.swift */,
+				743133A12129565700079302 /* APIManager.swift */,
+			);
+			path = BVGHackaton2018;
+			sourceTree = "<group>";
+		};
+		F22B864BFDE083D2654527FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA2D6938CE8DDA0567FE0E58 /* Pods_BVGHackaton2018.framework */,
+				9CE3ACA5462027C74EA2E011 /* Pods_BVGHackaton2018Tests.framework */,
+				268E10391408E37311A1EC27 /* Pods_BVGHackaton2018UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		746AB6A52128775E00ED7C02 /* BVGHackaton2018 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 746AB6CE2128776000ED7C02 /* Build configuration list for PBXNativeTarget "BVGHackaton2018" */;
+			buildPhases = (
+				C8A0DC6C122C2F7390462120 /* [CP] Check Pods Manifest.lock */,
+				746AB6A22128775E00ED7C02 /* Sources */,
+				746AB6A32128775E00ED7C02 /* Frameworks */,
+				746AB6A42128775E00ED7C02 /* Resources */,
+				BA1F4B4FFEE750F32DE921AC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BVGHackaton2018;
+			productName = BVGHackaton2018;
+			productReference = 746AB6A62128775E00ED7C02 /* BVGHackaton2018.app */;
+			productType = "com.apple.product-type.application";
+		};
+		746AB6B92128776000ED7C02 /* BVGHackaton2018Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 746AB6D12128776000ED7C02 /* Build configuration list for PBXNativeTarget "BVGHackaton2018Tests" */;
+			buildPhases = (
+				FCBC244B4F7E2B78F87D23BA /* [CP] Check Pods Manifest.lock */,
+				746AB6B62128776000ED7C02 /* Sources */,
+				746AB6B72128776000ED7C02 /* Frameworks */,
+				746AB6B82128776000ED7C02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				746AB6BC2128776000ED7C02 /* PBXTargetDependency */,
+			);
+			name = BVGHackaton2018Tests;
+			productName = BVGHackaton2018Tests;
+			productReference = 746AB6BA2128776000ED7C02 /* BVGHackaton2018Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		746AB6C42128776000ED7C02 /* BVGHackaton2018UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 746AB6D42128776000ED7C02 /* Build configuration list for PBXNativeTarget "BVGHackaton2018UITests" */;
+			buildPhases = (
+				874CBAD3CF04D8B3C8C7DD99 /* [CP] Check Pods Manifest.lock */,
+				746AB6C12128776000ED7C02 /* Sources */,
+				746AB6C22128776000ED7C02 /* Frameworks */,
+				746AB6C32128776000ED7C02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				746AB6C72128776000ED7C02 /* PBXTargetDependency */,
+			);
+			name = BVGHackaton2018UITests;
+			productName = BVGHackaton2018UITests;
+			productReference = 746AB6C52128776000ED7C02 /* BVGHackaton2018UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		746AB69E2128775E00ED7C02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Daniel Montano";
+				TargetAttributes = {
+					746AB6A52128775E00ED7C02 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					746AB6B92128776000ED7C02 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 746AB6A52128775E00ED7C02;
+					};
+					746AB6C42128776000ED7C02 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 746AB6A52128775E00ED7C02;
+					};
+				};
+			};
+			buildConfigurationList = 746AB6A12128775E00ED7C02 /* Build configuration list for PBXProject "BVGHackaton2018" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 746AB69D2128775E00ED7C02;
+			productRefGroup = 746AB6A72128775E00ED7C02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				746AB6A52128775E00ED7C02 /* BVGHackaton2018 */,
+				746AB6B92128776000ED7C02 /* BVGHackaton2018Tests */,
+				746AB6C42128776000ED7C02 /* BVGHackaton2018UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		746AB6A42128775E00ED7C02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				746AB6B42128776000ED7C02 /* LaunchScreen.storyboard in Resources */,
+				746AB6B12128776000ED7C02 /* Assets.xcassets in Resources */,
+				747FD7CC21296F5000EA905D /* Arrow3.scn in Resources */,
+				741AF1CA2128B5C70072BF7A /* Arrow1.scn in Resources */,
+				741AF1C82128B5A70072BF7A /* Arrow.dae in Resources */,
+				747FD7CA21296F2F00EA905D /* Arrow2.scn in Resources */,
+				746AB6AF2128775E00ED7C02 /* Main.storyboard in Resources */,
+				741AF1D02128C9B00072BF7A /* MiniMap.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		746AB6B82128776000ED7C02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		746AB6C32128776000ED7C02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		874CBAD3CF04D8B3C8C7DD99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BVGHackaton2018UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA1F4B4FFEE750F32DE921AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BVGHackaton2018/Pods-BVGHackaton2018-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BVGHackaton2018/Pods-BVGHackaton2018-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8A0DC6C122C2F7390462120 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BVGHackaton2018-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCBC244B4F7E2B78F87D23BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BVGHackaton2018Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		746AB6A22128775E00ED7C02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				746AB6AC2128775E00ED7C02 /* ViewController.swift in Sources */,
+				746AB6AA2128775E00ED7C02 /* AppDelegate.swift in Sources */,
+				741AF1CC2128B6610072BF7A /* Arrow.swift in Sources */,
+				741AF1BC21288A2D0072BF7A /* BVGHackaton2018.m in Sources */,
+				741AF1CE2128C5930072BF7A /* MiniMap.swift in Sources */,
+				74555F9D2128D0F40001043F /* Extensions.swift in Sources */,
+				743133A22129565700079302 /* APIManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		746AB6B62128776000ED7C02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		746AB6C12128776000ED7C02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		746AB6BC2128776000ED7C02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 746AB6A52128775E00ED7C02 /* BVGHackaton2018 */;
+			targetProxy = 746AB6BB2128776000ED7C02 /* PBXContainerItemProxy */;
+		};
+		746AB6C72128776000ED7C02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 746AB6A52128775E00ED7C02 /* BVGHackaton2018 */;
+			targetProxy = 746AB6C62128776000ED7C02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		746AB6AD2128775E00ED7C02 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				746AB6AE2128775E00ED7C02 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		746AB6B22128776000ED7C02 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				746AB6B32128776000ED7C02 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		746AB6CC2128776000ED7C02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		746AB6CD2128776000ED7C02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		746AB6CF2128776000ED7C02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 110590F11655E397F30C8636 /* Pods-BVGHackaton2018.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LVQ75DG6FL;
+				INFOPLIST_FILE = BVGHackaton2018/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danielmontano.BVGHackaton2018;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BVGHackaton2018/BVGHackaton2018-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		746AB6D02128776000ED7C02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B8CB6E1D3B607272C853734 /* Pods-BVGHackaton2018.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LVQ75DG6FL;
+				INFOPLIST_FILE = BVGHackaton2018/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danielmontano.BVGHackaton2018;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BVGHackaton2018/BVGHackaton2018-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		746AB6D22128776000ED7C02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C5DCB2B49B8D305393334FD /* Pods-BVGHackaton2018Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LVQ75DG6FL;
+				INFOPLIST_FILE = BVGHackaton2018Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danielmontano.BVGHackaton2018Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BVGHackaton2018.app/BVGHackaton2018";
+			};
+			name = Debug;
+		};
+		746AB6D32128776000ED7C02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42A160098AA48103C8045BEA /* Pods-BVGHackaton2018Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LVQ75DG6FL;
+				INFOPLIST_FILE = BVGHackaton2018Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danielmontano.BVGHackaton2018Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BVGHackaton2018.app/BVGHackaton2018";
+			};
+			name = Release;
+		};
+		746AB6D52128776000ED7C02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA778E9BA0E8C8C0B7A2242B /* Pods-BVGHackaton2018UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LVQ75DG6FL;
+				INFOPLIST_FILE = BVGHackaton2018UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danielmontano.BVGHackaton2018UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BVGHackaton2018;
+			};
+			name = Debug;
+		};
+		746AB6D62128776000ED7C02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6090EF5EEC35B2DC8A2A466D /* Pods-BVGHackaton2018UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LVQ75DG6FL;
+				INFOPLIST_FILE = BVGHackaton2018UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danielmontano.BVGHackaton2018UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BVGHackaton2018;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		746AB6A12128775E00ED7C02 /* Build configuration list for PBXProject "BVGHackaton2018" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				746AB6CC2128776000ED7C02 /* Debug */,
+				746AB6CD2128776000ED7C02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		746AB6CE2128776000ED7C02 /* Build configuration list for PBXNativeTarget "BVGHackaton2018" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				746AB6CF2128776000ED7C02 /* Debug */,
+				746AB6D02128776000ED7C02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		746AB6D12128776000ED7C02 /* Build configuration list for PBXNativeTarget "BVGHackaton2018Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				746AB6D22128776000ED7C02 /* Debug */,
+				746AB6D32128776000ED7C02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		746AB6D42128776000ED7C02 /* Build configuration list for PBXNativeTarget "BVGHackaton2018UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				746AB6D52128776000ED7C02 /* Debug */,
+				746AB6D62128776000ED7C02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 746AB69E2128775E00ED7C02 /* Project object */;
+}
