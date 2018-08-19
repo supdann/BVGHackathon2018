@@ -11,6 +11,7 @@ import UIKit
 
 class MiniMap: UIView {
     
+    @IBOutlet weak var loadingText: UILabel!
     @IBOutlet weak var c1: UIView!
     @IBOutlet weak var c2: UIView!
     @IBOutlet weak var c3: UIView!
@@ -35,6 +36,8 @@ class MiniMap: UIView {
         
         grid = [[c1,c2],[c3,c4],[c5,c6],[c7,c8],[c9, c10]]
         
+        self.loadingText.text = ""
+        
         for n in 0...grid.count - 1 {
             let view1 = grid[n][0]
             let view2 = grid[n][1]
@@ -45,6 +48,7 @@ class MiniMap: UIView {
             view2.layer.borderColor = UIColor.init(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0).cgColor
             view2.layer.borderWidth = 0.5
         }
+        
     }
     
     func clearAll(){

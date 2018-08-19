@@ -36,12 +36,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     
     var message1 = "Du bist am Hauptbahnhof auf Gleis 3 angekommen. \nFolge den grünen Pfeil geradeaus um am Ende des \nGleises anzukommen"
-    var message2 = "Biege links ab und folge den \nPfeil bis zur nächsten Ecke"
-    var message3 = "Geh durch die Tür nach draußen, \ndu bist am Ziel ;)"
+    var message3 = "Biege links ab und folge den \nPfeil bis zur nächsten Ecke"
+    var message2 = "Geh durch die Tür nach draußen, \ndu bist am Ziel ;)"
     
-    var mes1PosVector = SCNVector3(2.0, -0.8, -3.0)
-    var mes2PosVector = SCNVector3(-2.0, -0.8, 2.0)
-    var mes3PosVector = SCNVector3(2.0, -0.8, -3.0)
+    var mes1PosVector = SCNVector3(3.0, -0.8, -3.0)
+    var mes2PosVector = SCNVector3(-2.0, -0.8, 1.0)
+    var mes3PosVector = SCNVector3(-1.0, -0.8, -2.0)
     
     
     
@@ -229,7 +229,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     self.currentPosition = b3Pos
                 }
                 
-                return self.currentPosition!
+                return self.currentPosition
                 
             }
         }
@@ -237,6 +237,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     
     func addArrow() {
+        
+        self.sceneView.scene.rootNode.enumerateChildNodes { (node, stop) in
+            print("node!")
+            node.removeFromParentNode()
+        }
+        self.sceneView.session.run(self.configuration, options: [.resetTracking,.removeExistingAnchors])
+        let localConfig = ARWorldTrackingConfiguration()
+        
+        localConfig.worldAlignment = .gravityAndHeading
+        self.sceneView.session.run(localConfig)
         
         if(self.currentPosition != nil){
             
@@ -266,75 +276,56 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 self.displayLabel.text = message3
             }
             
-            
-            let flourPlane = SCNFloor()
-            let groundPlane = SCNNode()
-            let groundMaterial = SCNMaterial()
-            groundMaterial.lightingModel = .constant
-            groundMaterial.writesToDepthBuffer = true
-            groundMaterial.colorBufferWriteMask = []
-            groundMaterial.isDoubleSided = true
-            flourPlane.materials = [groundMaterial]
-            groundPlane.geometry = flourPlane
-            //
-            arrow!.addChildNode(groundPlane)
-            // Create a ambient light
-            let ambientLight = SCNNode()
-            ambientLight.light = SCNLight()
-            ambientLight.light?.shadowMode = .deferred
-            ambientLight.light?.color = UIColor.white
-            ambientLight.light?.type = SCNLight.LightType.ambient
-            ambientLight.position = SCNVector3(x: 0,y: 5,z: 0)
-            // Create a directional light node with shadow
-            let myNode = SCNNode()
-            myNode.light = SCNLight()
-            myNode.light?.type = SCNLight.LightType.directional
-            myNode.light?.color = UIColor.white
-            myNode.light?.castsShadow = true
-            myNode.light?.automaticallyAdjustsShadowProjection = true
-            myNode.light?.shadowSampleCount = 64
-            myNode.light?.shadowRadius = 16
-            myNode.light?.shadowMode = .deferred
-            myNode.light?.shadowMapSize = CGSize(width: 2048, height: 2048)
-            myNode.light?.shadowColor = UIColor.black.withAlphaComponent(0.75)
-            myNode.position = SCNVector3(x: 0,y: 5,z: 0)
-            myNode.eulerAngles = SCNVector3(-Float.pi / 2, 0, 0)
-            // Add the lights to the container
-            arrow!.addChildNode(ambientLight)
-            arrow!.addChildNode(myNode)
-            
-            if(self.currentPosition != nil){
-                sceneView.scene.rootNode.addChildNode(arrow!)
+            if let arr = arrow {
+                
+//                let flourPlane = SCNFloor()
+//                let groundPlane = SCNNode()
+//                let groundMaterial = SCNMaterial()
+//                groundMaterial.lightingModel = .constant
+//                groundMaterial.writesToDepthBuffer = true
+//                groundMaterial.colorBufferWriteMask = []
+//                groundMaterial.isDoubleSided = true
+//                flourPlane.materials = [groundMaterial]
+//                groundPlane.geometry = flourPlane
+//                //
+//                arrow!.addChildNode(groundPlane)
+//                // Create a ambient light
+//                let ambientLight = SCNNode()
+//                ambientLight.light = SCNLight()
+//                ambientLight.light?.shadowMode = .deferred
+//                ambientLight.light?.color = UIColor.white
+//                ambientLight.light?.type = SCNLight.LightType.ambient
+//                ambientLight.position = SCNVector3(x: 0,y: 5,z: 0)
+//                // Create a directional light node with shadow
+//                let myNode = SCNNode()
+//                myNode.light = SCNLight()
+//                myNode.light?.type = SCNLight.LightType.directional
+//                myNode.light?.color = UIColor.white
+//                myNode.light?.castsShadow = true
+//                myNode.light?.automaticallyAdjustsShadowProjection = true
+//                myNode.light?.shadowSampleCount = 64
+//                myNode.light?.shadowRadius = 16
+//                myNode.light?.shadowMode = .deferred
+//                myNode.light?.shadowMapSize = CGSize(width: 2048, height: 2048)
+//                myNode.light?.shadowColor = UIColor.black.withAlphaComponent(0.75)
+//                myNode.position = SCNVector3(x: 0,y: 5,z: 0)
+//                myNode.eulerAngles = SCNVector3(-Float.pi / 2, 0, 0)
+//                // Add the lights to the container
+//                arrow!.addChildNode(ambientLight)
+//                arrow!.addChildNode(myNode)
+                
+                if(self.currentPosition != nil){
+                    sceneView.scene.rootNode.addChildNode(arr)
+                }
             }
-            
-        }else{
-            //self.displayLabel.text = "Hallo!"
-           // arrow.position = mes1PosVector
-            //arrow.rotation = SCNVector4Zero
         }
-        
     }
     
     func startTimer(){
-        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true, block: { timer in
+        Timer.scheduledTimer(withTimeInterval: 4.0, repeats: true, block: { timer in
             BIBeaconService.initWithToken("ogqqzwFEtqQWTek5Y34W")
-            self.sceneView.scene.rootNode.enumerateChildNodes { (node, stop) in
-                print("node!")
-                node.removeFromParentNode()
-            }
-            self.sceneView.session.run(self.configuration, options: [.resetTracking,.removeExistingAnchors])
-            let localConfig = ARWorldTrackingConfiguration()
-            
-            localConfig.worldAlignment = .gravityAndHeading
-            self.sceneView.session.run(localConfig)
-            
-//            let arrow = Arrow()
-//            arrow.loadModel()
-//            arrow.position = self.kStartingPosition
-//            arrow.rotation = SCNVector4Zero
-//            self.sceneView.scene.rootNode.addChildNode(arrow)
-            
-            self.addArrow()
+           
+            // self.addArrow()
 
             print("reloading")
         })
@@ -390,15 +381,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     
                     var newPos = calculatePosition(beaconInfos: [minor:accuracy])
                     
+                    self.addArrow()
+                    
                     if let cPos = self.currentPosition, let uNewPos = newPos {
                         
-                        if(cPos == uNewPos){
-                            APIManager.sharedInstance.sendCoords(latitude: self.currentLatitude, longitude: self.currentLongitude, callback: { error in
-                                if let error = error {
-                                    print(error)
-                                }
-                            })
-                        }
+                        APIManager.sharedInstance.sendCoords(latitude: self.currentLatitude, longitude: self.currentLongitude, callback: { error in
+                            if let error = error {
+                                print(error)
+                            }
+                        })
+                            
                     }
                     
                     

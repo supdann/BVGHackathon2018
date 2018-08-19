@@ -87,6 +87,12 @@
                         <constraint firstAttribute="height" constant="20" id="4sp-y0-vXv"/>
                     </constraints>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="199-Ij-WeB">
+                    <rect key="frame" x="10" y="39.5" width="61" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
@@ -100,6 +106,7 @@
                 <constraint firstItem="BP2-w6-ypr" firstAttribute="trailing" secondItem="3Ji-nY-hzo" secondAttribute="trailing" id="Ghu-P7-FSo"/>
                 <constraint firstItem="okR-rJ-lKa" firstAttribute="leading" secondItem="3Ji-nY-hzo" secondAttribute="leading" id="IOL-5X-92y"/>
                 <constraint firstItem="BP2-w6-ypr" firstAttribute="top" secondItem="3Ji-nY-hzo" secondAttribute="top" id="MiZ-sY-OFK"/>
+                <constraint firstItem="199-Ij-WeB" firstAttribute="centerX" secondItem="3Ji-nY-hzo" secondAttribute="centerX" id="Opr-SL-wf1"/>
                 <constraint firstItem="70s-v7-rve" firstAttribute="top" secondItem="BP2-w6-ypr" secondAttribute="bottom" id="QJo-ZK-EcJ"/>
                 <constraint firstItem="ZTb-Wk-HBl" firstAttribute="leading" secondItem="okR-rJ-lKa" secondAttribute="trailing" id="TOx-UK-J4y"/>
                 <constraint firstItem="kSJ-ub-M1L" firstAttribute="trailing" secondItem="3Ji-nY-hzo" secondAttribute="trailing" id="UGl-us-s1p"/>
@@ -110,6 +117,7 @@
                 <constraint firstItem="J16-zN-LKP" firstAttribute="leading" secondItem="3Ji-nY-hzo" secondAttribute="leading" id="f7V-5d-oUl"/>
                 <constraint firstItem="70s-v7-rve" firstAttribute="leading" secondItem="J16-zN-LKP" secondAttribute="trailing" id="gac-Zo-ov6"/>
                 <constraint firstItem="uml-eE-Hga" firstAttribute="top" secondItem="okR-rJ-lKa" secondAttribute="bottom" id="gfI-14-KEj"/>
+                <constraint firstItem="199-Ij-WeB" firstAttribute="centerY" secondItem="3Ji-nY-hzo" secondAttribute="centerY" id="oGa-Kv-dAz"/>
                 <constraint firstItem="BP2-w6-ypr" firstAttribute="leading" secondItem="PeG-RS-XiI" secondAttribute="trailing" id="qeS-QJ-g3f"/>
                 <constraint firstItem="okR-rJ-lKa" firstAttribute="top" secondItem="J16-zN-LKP" secondAttribute="bottom" id="rPE-4u-JIc"/>
                 <constraint firstItem="5k1-AX-I9T" firstAttribute="leading" secondItem="8j3-Bu-eZ4" secondAttribute="trailing" id="tLY-V3-K70"/>
@@ -131,8 +139,17 @@
                 <outlet property="c7" destination="uml-eE-Hga" id="LMX-CK-p0b"/>
                 <outlet property="c8" destination="kSJ-ub-M1L" id="tQN-mO-P5g"/>
                 <outlet property="c9" destination="8j3-Bu-eZ4" id="utr-Va-sqG"/>
+                <outlet property="loadingText" destination="199-Ij-WeB" id="C8k-zo-yrR"/>
             </connections>
             <point key="canvasLocation" x="-105" y="-626"/>
         </view>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k1x-Xc-gZC">
+            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="-36" y="-671.5"/>
+        </label>
     </objects>
 </document>

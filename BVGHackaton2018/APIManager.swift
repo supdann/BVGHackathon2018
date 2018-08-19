@@ -25,15 +25,13 @@ class APIManager {
     
     func sendCoords(latitude: Double, longitude: Double, callback: @escaping (Error?) -> Void){
         
-        jsonRequest(urlStr: "https://bvg-indoor-maps.appspot.com/post?lat=\(latitude)&long\(longitude)", httpMethod: "GET", parameters: nil, completion: { json, error in
+        jsonRequest(urlStr: "https://bvg-indoor-maps.appspot.com/post?lat=\(latitude)&long=\(longitude)", httpMethod: "GET", parameters: nil, completion: { json, error in
             
             if let err = error {
                 callback(err)
             }
         })
     }
-    
-    
     
     /// Use this method to make a http request where the response should be a json file
     ///
