@@ -1,0 +1,16 @@
+PODS:
+  - BeaconService (2.11.1)
+
+DEPENDENCIES:
+  - BeaconService (~> 2.11.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BeaconService
+
+SPEC CHECKSUMS:
+  BeaconService: 1b2e1dac1d018ea5e758681ccbb3faa68fcbb82e
+
+PODFILE CHECKSUM: 45644666f2ee39fec36ebe9970c982a5ad60a482
+
+COCOAPODS: 1.5.3
