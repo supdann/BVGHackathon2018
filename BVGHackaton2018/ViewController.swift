@@ -91,6 +91,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         super.viewWillAppear(animated)
         
         locationManager.delegate = self
+        locationManager.startUpdatingLocation()
         
         setupConfiguration()
         addArrow()
@@ -107,6 +108,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         self.currentLatitude = locations[0].coordinate.latitude
         self.currentLongitude = locations[0].coordinate.longitude
+        print("lat: \( self.currentLatitude), lon: \(self.currentLongitude)")
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
